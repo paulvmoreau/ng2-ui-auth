@@ -17,10 +17,10 @@ import { AuthService } from './auth.service';
   declarations: [],
   exports: []
 })
-export class Ng2UiAuthModule {
+export class Ng2UiAuth11Module {
   static forRoot(configOptions?: IPartialConfigOptions, defaultJwtInterceptor = true): ModuleWithProviders<any> {
     return {
-      ngModule: Ng2UiAuthModule,
+      ngModule: Ng2UiAuth11Module,
       providers: [
         ...(configOptions ? [{ provide: CONFIG_OPTIONS, useValue: configOptions }] : []),
         { provide: ConfigService, useClass: ConfigService, deps: [CONFIG_OPTIONS] },

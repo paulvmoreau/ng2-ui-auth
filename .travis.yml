@@ -14,7 +14,7 @@ jobs:
       script:
         - npm run build
       before_deploy:
-        - cd dist/ng2-ui-auth
+        - cd dist/ng2-ui-auth-11
       deploy:
         provider: npm
         email: 'ron.zeidman@gmail.com'

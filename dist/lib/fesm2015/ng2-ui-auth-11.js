@@ -191,7 +191,7 @@ class ConfigService {
             unlinkUrl: '/auth/unlink/',
             tokenName: 'token',
             tokenSeparator: '_',
-            tokenPrefix: 'ng2-ui-auth',
+            tokenPrefix: 'ng2-ui-auth-11',
             authHeader: 'Authorization',
             authToken: 'Bearer',
             storageType: StorageType.LOCAL_STORAGE,
@@ -845,10 +845,10 @@ AuthService.ctorParameters = () => [
     { type: OauthService }
 ];
 
-class Ng2UiAuthModule {
+class Ng2UiAuth11Module {
     static forRoot(configOptions, defaultJwtInterceptor = true) {
         return {
-            ngModule: Ng2UiAuthModule,
+            ngModule: Ng2UiAuth11Module,
             providers: [
                 ...(configOptions ? [{ provide: CONFIG_OPTIONS, useValue: configOptions }] : []),
                 { provide: ConfigService, useClass: ConfigService, deps: [CONFIG_OPTIONS] },
@@ -865,7 +865,7 @@ class Ng2UiAuthModule {
         };
     }
 }
-Ng2UiAuthModule.decorators = [
+Ng2UiAuth11Module.decorators = [
     { type: NgModule, args: [{
                 imports: [HttpClientModule],
                 declarations: [],
@@ -877,5 +877,5 @@ Ng2UiAuthModule.decorators = [
  * Generated bundle index. Do not edit.
  */
 
-export { AuthService, BrowserStorageService, CONFIG_OPTIONS, ConfigService, JwtInterceptor, LocalService, Ng2UiAuthModule, Oauth1Service, Oauth2Service, OauthService, PopupService, SharedService, StorageService, StorageType };
-//# sourceMappingURL=ng2-ui-auth.js.map
+export { AuthService, BrowserStorageService, CONFIG_OPTIONS, ConfigService, JwtInterceptor, LocalService, Ng2UiAuth11Module, Oauth1Service, Oauth2Service, OauthService, PopupService, SharedService, StorageService, StorageType };
+//# sourceMappingURL=ng2-ui-auth-11.js.map

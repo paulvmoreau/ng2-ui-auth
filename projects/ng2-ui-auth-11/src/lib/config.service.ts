@@ -15,7 +15,7 @@ export class ConfigService {
     unlinkUrl: '/auth/unlink/',
     tokenName: 'token',
     tokenSeparator: '_',
-    tokenPrefix: 'ng2-ui-auth',
+    tokenPrefix: 'ng2-ui-auth-11',
     authHeader: 'Authorization',
     authToken: 'Bearer',
     storageType: StorageType.LOCAL_STORAGE,

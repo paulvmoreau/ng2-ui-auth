@@ -1,4 +1,4 @@
-import { Ng2UiAuthModule } from './lib/ng2-ui-auth.module';
+import { Ng2UiAuth11Module } from './lib/ng2-ui-auth-11.module';
 import { LocalService } from './lib/local.service';
 import { Oauth2Service } from './lib/oauth2.service';
 import { Oauth1Service } from './lib/oauth1.service';
@@ -12,4 +12,4 @@ import { ConfigService, CONFIG_OPTIONS } from './lib/config.service';
 import { JwtInterceptor } from './lib/interceptor.service';
 import { IProviders } from './lib/config-interfaces';
 import { StorageType } from './lib/storage-type.enum';
-export { Ng2UiAuthModule, LocalService, Oauth2Service, Oauth1Service, PopupService, OauthService, SharedService, StorageService, BrowserStorageService, AuthService, ConfigService, JwtInterceptor, CONFIG_OPTIONS, IProviders, StorageType };
+export { Ng2UiAuth11Module, LocalService, Oauth2Service, Oauth1Service, PopupService, OauthService, SharedService, StorageService, BrowserStorageService, AuthService, ConfigService, JwtInterceptor, CONFIG_OPTIONS, IProviders, StorageType };

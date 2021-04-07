@@ -1,6 +1,6 @@
 {
-  "name": "ng2-ui-auth",
-  "version": "10.0.3",
+  "name": "ng2-ui-auth-11",
+  "version": "10.0.6",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,15 +9,15 @@
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
-  "main": "dist/ng2-ui-auth/bundles/ng2-ui-auth.umd.js",
-  "module": "dist/ng2-ui-auth/fesm5/ng2-ui-auth.js",
-  "es2015": "dist/ng2-ui-auth/fesm2015/ng2-ui-auth.js",
-  "esm5": "dist/ng2-ui-auth/esm5/ng2-ui-auth.js",
-  "esm2015": "dist/ng2-ui-auth/esm2015/ng2-ui-auth.js",
-  "fesm5": "dist/ng2-ui-auth/fesm5/ng2-ui-auth.js",
-  "fesm2015": "dist/ng2-ui-auth/fesm2015/ng2-ui-auth.js",
-  "typings": "dist/ng2-ui-auth/ng2-ui-auth.d.ts",
-  "metadata": "dist/ng2-ui-auth/ng2-ui-auth.metadata.json",
+  "main": "dist/ng2-ui-auth-11/bundles/ng2-ui-auth-11.umd.js",
+  "module": "dist/ng2-ui-auth-11/fesm5/ng2-ui-auth-11.js",
+  "es2015": "dist/ng2-ui-auth-11/fesm2015/ng2-ui-auth-11.js",
+  "esm5": "dist/ng2-ui-auth-11/esm5/ng2-ui-auth-11.js",
+  "esm2015": "dist/ng2-ui-auth-11/esm2015/ng2-ui-auth-11.js",
+  "fesm5": "dist/ng2-ui-auth-11/fesm5/ng2-ui-auth-11.js",
+  "fesm2015": "dist/ng2-ui-auth-11/fesm2015/ng2-ui-auth-11.js",
+  "typings": "dist/ng2-ui-auth-11/ng2-ui-auth-11.d.ts",
+  "metadata": "dist/ng2-ui-auth-11/ng2-ui-auth-11.metadata.json",
   "sideEffects": false,
   "private": true,
   "dependencies": {

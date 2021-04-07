@@ -1,4 +1,4 @@
-import { Ng2UiAuthModule } from './lib/ng2-ui-auth.module';
+import { Ng2UiAuth11Module } from './lib/ng2-ui-auth-11.module';
 import { LocalService } from './lib/local.service';
 import { Oauth2Service } from './lib/oauth2.service';
 import { Oauth1Service } from './lib/oauth1.service';
@@ -17,7 +17,7 @@ import { StorageType } from './lib/storage-type.enum';
  * Public API Surface of ng2-ui-auth
  */
 export {
-  Ng2UiAuthModule,
+  Ng2UiAuth11Module,
   LocalService,
   Oauth2Service,
   Oauth1Service,

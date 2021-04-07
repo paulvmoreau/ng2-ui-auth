@@ -1,7 +1,7 @@
 (function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/common/http'), require('rxjs'), require('rxjs/operators')) :
-    typeof define === 'function' && define.amd ? define('ng2-ui-auth', ['exports', '@angular/core', '@angular/common/http', 'rxjs', 'rxjs/operators'], factory) :
-    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['ng2-ui-auth'] = {}, global.ng.core, global.ng.common.http, global.rxjs, global.rxjs.operators));
+    typeof define === 'function' && define.amd ? define('ng2-ui-auth-11', ['exports', '@angular/core', '@angular/common/http', 'rxjs', 'rxjs/operators'], factory) :
+    (global = typeof globalThis !== 'undefined' ? globalThis : global || self, factory(global['ng2-ui-auth-11'] = {}, global.ng.core, global.ng.common.http, global.rxjs, global.rxjs.operators));
 }(this, (function (exports, core, http, rxjs, operators) { 'use strict';
 
     /*! *****************************************************************************
@@ -503,7 +503,7 @@
                 unlinkUrl: '/auth/unlink/',
                 tokenName: 'token',
                 tokenSeparator: '_',
-                tokenPrefix: 'ng2-ui-auth',
+                tokenPrefix: 'ng2-ui-auth-11',
                 authHeader: 'Authorization',
                 authToken: 'Bearer',
                 storageType: exports.StorageType.LOCAL_STORAGE,
@@ -1198,13 +1198,13 @@
         { type: OauthService }
     ]; };
 
-    var Ng2UiAuthModule = /** @class */ (function () {
-        function Ng2UiAuthModule() {
+    var Ng2UiAuth11Module = /** @class */ (function () {
+        function Ng2UiAuth11Module() {
         }
-        Ng2UiAuthModule.forRoot = function (configOptions, defaultJwtInterceptor) {
+        Ng2UiAuth11Module.forRoot = function (configOptions, defaultJwtInterceptor) {
             if (defaultJwtInterceptor === void 0) { defaultJwtInterceptor = true; }
             return {
-                ngModule: Ng2UiAuthModule,
+                ngModule: Ng2UiAuth11Module,
                 providers: __spread((configOptions ? [{ provide: CONFIG_OPTIONS, useValue: configOptions }] : []), [
                     { provide: ConfigService, useClass: ConfigService, deps: [CONFIG_OPTIONS] },
                     { provide: StorageService, useClass: BrowserStorageService, deps: [ConfigService] },
@@ -1218,9 +1218,9 @@
                     : []))
             };
         };
-        return Ng2UiAuthModule;
+        return Ng2UiAuth11Module;
     }());
-    Ng2UiAuthModule.decorators = [
+    Ng2UiAuth11Module.decorators = [
         { type: core.NgModule, args: [{
                     imports: [http.HttpClientModule],
                     declarations: [],
@@ -1238,7 +1238,7 @@
     exports.ConfigService = ConfigService;
     exports.JwtInterceptor = JwtInterceptor;
     exports.LocalService = LocalService;
-    exports.Ng2UiAuthModule = Ng2UiAuthModule;
+    exports.Ng2UiAuth11Module = Ng2UiAuth11Module;
     exports.Oauth1Service = Oauth1Service;
     exports.Oauth2Service = Oauth2Service;
     exports.OauthService = OauthService;
@@ -1249,4 +1249,4 @@
     Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-//# sourceMappingURL=ng2-ui-auth.umd.js.map
+//# sourceMappingURL=ng2-ui-auth-11.umd.js.map
