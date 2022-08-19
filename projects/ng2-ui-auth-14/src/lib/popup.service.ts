@@ -41,7 +41,7 @@ export class PopupService {
     ).pipe(
       switchMap((event: Event & { url: string }) => {
         if (!popupWindow || popupWindow.closed) {
-          return Observable.throw(new Error('Authentication Canceled'));
+          throw(new Error('Authentication Canceled'));
         }
         if (event.url.indexOf(redirectUri) !== 0) {
           return empty();

@@ -1,6 +1,6 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { IConfigOptions, IPartialConfigOptions } from './config-interfaces';
+import { IPartialConfigOptions } from './config-interfaces';
 import { CONFIG_OPTIONS, ConfigService } from './config.service';
 import { StorageService } from './storage-service';
 import { BrowserStorageService } from './browser-storage.service';
@@ -17,10 +17,10 @@ import { AuthService } from './auth.service';
   declarations: [],
   exports: []
 })
-export class Ng2UiAuth11Module {
+export class Ng2UiAuth14Module {
   static forRoot(configOptions?: IPartialConfigOptions, defaultJwtInterceptor = true): ModuleWithProviders<any> {
     return {
-      ngModule: Ng2UiAuth11Module,
+      ngModule: Ng2UiAuth14Module,
       providers: [
         ...(configOptions ? [{ provide: CONFIG_OPTIONS, useValue: configOptions }] : []),
         { provide: ConfigService, useClass: ConfigService, deps: [CONFIG_OPTIONS] },
