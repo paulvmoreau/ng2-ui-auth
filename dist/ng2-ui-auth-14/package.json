@@ -1,0 +1,32 @@
+{
+  "name": "ng2-ui-auth-14",
+  "version": "10.0.8",
+  "peerDependencies": {
+    "@angular/common": "^14.1.3",
+    "@angular/core": "^14.1.3",
+    "rxjs": "^7.5.6"
+  },
+  "module": "fesm2015/ng2-ui-auth-14.mjs",
+  "es2020": "fesm2020/ng2-ui-auth-14.mjs",
+  "esm2020": "esm2020/ng2-ui-auth-14.mjs",
+  "fesm2020": "fesm2020/ng2-ui-auth-14.mjs",
+  "fesm2015": "fesm2015/ng2-ui-auth-14.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2020": "./esm2020/ng2-ui-auth-14.mjs",
+      "es2020": "./fesm2020/ng2-ui-auth-14.mjs",
+      "es2015": "./fesm2015/ng2-ui-auth-14.mjs",
+      "node": "./fesm2015/ng2-ui-auth-14.mjs",
+      "default": "./fesm2020/ng2-ui-auth-14.mjs"
+    }
+  },
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^2.3.0"
+  }
+}
