@@ -18,7 +18,7 @@ import { AuthService } from './auth.service';
   exports: []
 })
 export class Ng2UiAuth14Module {
-  static forRoot(configOptions?: IPartialConfigOptions, defaultJwtInterceptor = true): ModuleWithProviders<any> {
+  static forRoot(configOptions?: IPartialConfigOptions, defaultJwtInterceptor = true): ModuleWithProviders<Ng2UiAuth14Module> {
     return {
       ngModule: Ng2UiAuth14Module,
       providers: [
